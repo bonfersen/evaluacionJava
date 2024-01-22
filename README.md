@@ -1,7 +1,7 @@
 ## Table of Contents
 1. [General Info](#general-info)
-2. [Tecnologias](#technologies)
-3. [Instalacion](#installation)
+2. [Tecnologias](#tecnologias)
+3. [Instalacion](#instalacion)
 ### General Info
 ***
 El proyecto expone un API con dos endpoints para el manejo de la entidad Usuario:
