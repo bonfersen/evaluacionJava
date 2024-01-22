@@ -13,7 +13,7 @@ Opcionalmente, si se desea persistir la data en HSQLDB server se puede ejecutar 
 El proyecto fue trabajado con el IDE de Intellij Idea.
 
 ### Diagrama
-![Image text]([https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1BEZfMxMrJRu5-129hIuIHYohOUZAG2K9))
+![alt text](https://i.ibb.co/wLzRHsR/diagrama-Evaluacion-drawio.png)
 ## Tecnologias
 ***
 A list of technologies used within the project:
