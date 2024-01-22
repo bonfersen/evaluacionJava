@@ -13,9 +13,6 @@ Opcionalmente, si se desea persistir la data en HSQLDB server se puede ejecutar 
 
 El proyecto fue trabajado con el IDE de Intellij Idea
 
-Los test se encuentran en el paquete y clase: com.evaluacion.bustamante.UsuarioControllerTest
-
-Al levantar el proyecto, Swagger se encuentra configurado en la URL http://localhost:8080/swagger-ui/index.html
 ### Screenshot
 ![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
 ## Tecnologias
@@ -29,6 +26,8 @@ A list of technologies used within the project:
 ***
 * Bajar el proyecto: git clone https://github.com/bonfersen/evaluacionJava.git
 * Abrir la carpeta del proyecto con Intellij Idea
-* Ejecutar la clase com.evaluacion.bustamante.BustamanteApplication
+* Ejecutar la clase main com.evaluacion.bustamante.BustamanteApplication
+* Los test se encuentran en el paquete y clase: com.evaluacion.bustamante.UsuarioControllerTest
+* Swagger se encuentra configurado en la URL http://localhost:8080/swagger-ui/index.html
 ```
 
