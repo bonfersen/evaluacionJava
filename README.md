@@ -12,8 +12,8 @@ Por defecto el proyecto ejecuta con la base de datos HSQLDB en memoria.
 Opcionalmente, si se desea persistir la data en HSQLDB server se puede ejecutar el archivo script.sql que crea las tablas y registros demo.
 El proyecto fue trabajado con el IDE de Intellij Idea.
 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+### Diagrama
+![Image text]([https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1BEZfMxMrJRu5-129hIuIHYohOUZAG2K9))
 ## Tecnologias
 ***
 A list of technologies used within the project:
