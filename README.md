@@ -16,7 +16,7 @@ El proyecto fue trabajado con el IDE de Intellij Idea.
 ![alt text](https://i.ibb.co/wLzRHsR/diagrama-Evaluacion-drawio.png)
 ## Tecnologias
 ***
-A list of technologies used within the project:
+Lista de tecnologias usadas dentro del proyecto:
 * Java version 17 
 * HyperSQL version 2.7.2
 * Spring Boot version 3.2.2
