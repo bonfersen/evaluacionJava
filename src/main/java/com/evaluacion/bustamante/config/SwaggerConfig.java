@@ -4,7 +4,6 @@ package com.evaluacion.bustamante.config;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
-import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -20,37 +19,25 @@ import java.util.List;
 @Configuration
 public class SwaggerConfig {
 
-    @Value("${evaluacion.openapi.dev-url}")
-    private String devUrl;
-
-    @Value("${evaluacion.openapi.prod-url}")
-    private String prodUrl;
+    @Value("${evaluacion.openapi.url}")
+    private String urlOpenApi;
 
     @Bean
     public OpenAPI customOpenAPI() {
-        Server devServer = new Server();
-        devServer.setUrl(devUrl);
-        devServer.setDescription("Server URL entorno de desarrollo");
-
-        Server prodServer = new Server();
-        prodServer.setUrl(prodUrl);
-        prodServer.setDescription("Server URL entorno de produccion");
+        Server server = new Server();
+        server.setUrl(urlOpenApi);
+        server.setDescription("URL API Evaluacion");
 
         Contact contact = new Contact();
         contact.setEmail("bonfersen@gmail.com");
-        contact.setName("Luis");
-        contact.setUrl("https://www.linkedin.com/in/luisbustamantevillar/");
-
-        License mitLicense = new License().name("TEST License").url("http://test.com");
+        contact.setName("Luis Bustamante");
 
         Info info = new Info()
-                .title("Tutorial Management API")
-                .version("1.0")
+                .title("API 0.0.1 Mantenimiento Usuario")
+                .version("0.0.1")
                 .contact(contact)
-                .description("This API exposes endpoints to manage tutorials.").termsOfService("https://www.bezkoder.com/terms")
-                .license(mitLicense);
+                .description("Se exponen dos endpoints: Buscar usuario por su ID en UUID y creacion de registro de un usuario con sus telefonos asociados");
 
-        return new OpenAPI().info(info).servers(List.of(devServer, prodServer));
-
+        return new OpenAPI().info(info).servers(List.of(server));
     }
 }

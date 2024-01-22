@@ -5,7 +5,6 @@ import com.evaluacion.bustamante.api.domain.UsuarioInfo;
 import com.evaluacion.bustamante.api.domain.UsuarioResponse;
 import com.evaluacion.bustamante.api.entity.Telefono;
 import com.evaluacion.bustamante.api.entity.Usuario;
-import com.evaluacion.bustamante.api.repository.TelefonoRepository;
 import com.evaluacion.bustamante.api.repository.UsuarioRepository;
 import com.evaluacion.bustamante.api.service.UsuarioService;
 import com.evaluacion.bustamante.util.ValidateUtil;
@@ -31,11 +30,8 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     private final UsuarioRepository usuarioRepository;
 
-    private final TelefonoRepository telefonoRepository;
-
-    public UsuarioServiceImpl(UsuarioRepository usuarioRepository, TelefonoRepository telefonoRepository) {
+    public UsuarioServiceImpl(UsuarioRepository usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
-        this.telefonoRepository = telefonoRepository;
     }
 
     @Override

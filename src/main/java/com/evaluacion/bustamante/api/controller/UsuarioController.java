@@ -2,7 +2,6 @@ package com.evaluacion.bustamante.api.controller;
 
 import com.evaluacion.bustamante.api.domain.Notificacion;
 import com.evaluacion.bustamante.api.domain.UsuarioInfo;
-import com.evaluacion.bustamante.api.domain.UsuarioResponse;
 import com.evaluacion.bustamante.api.entity.Usuario;
 import com.evaluacion.bustamante.api.service.UsuarioService;
 import org.springframework.http.HttpStatus;

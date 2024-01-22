@@ -1,6 +1,5 @@
 package com.evaluacion.bustamante.api.service;
 
-import com.evaluacion.bustamante.api.domain.Notificacion;
 import com.evaluacion.bustamante.api.domain.UsuarioInfo;
 import com.evaluacion.bustamante.api.domain.UsuarioResponse;
 import com.evaluacion.bustamante.api.entity.Usuario;
