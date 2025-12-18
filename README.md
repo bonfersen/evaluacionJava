@@ -27,6 +27,6 @@ Lista de tecnologias usadas dentro del proyecto:
 * Abrir la carpeta del proyecto con Intellij Idea
 * Ejecutar la clase main com.evaluacion.bustamante.BustamanteApplication
 * Los test se encuentran en el paquete y clase: com.evaluacion.bustamante.UsuarioControllerTest
-* Swagger se encuentra configurado en la URL http://localhost:8080/swagger-ui/index.html
+* Swagger se encuentra configurado en la URL http://localhost:8088/swagger-ui/index.html
 ```
 
