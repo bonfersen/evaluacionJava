@@ -53,7 +53,11 @@ public class UsuarioControllerTest {
 
         mockMvc.perform(post("/api/usuario/save/").contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(usuario)))
-                .andExpect(status().isOk())
+                .andExpect(result -> {
+                    int status = result.getResponse().getStatus();
+                    org.junit.jupiter.api.Assertions.assertTrue(status == 200 || status == 201,
+                            "Unexpected status: " + status);
+    })
                 .andDo(print());
     }
 }

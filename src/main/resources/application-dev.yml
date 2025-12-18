@@ -1,0 +1,15 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb;DB_CLOSE_DELAY=-1
+    username: SA
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+evaluacion:
+  openapi:
+    url: http://localhost:8088

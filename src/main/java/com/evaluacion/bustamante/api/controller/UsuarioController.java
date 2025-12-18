@@ -29,13 +29,13 @@ public class UsuarioController {
     }
 
     @PostMapping(value = "/save/")
-    public ResponseEntity<Object> saveUsuario(@RequestBody UsuarioInfo usuarioInfo) {
+    public ResponseEntity saveUsuario(@RequestBody UsuarioInfo usuarioInfo) {
         try {
-            return new ResponseEntity<Object>(usuarioService.saveUsuario(usuarioInfo), HttpStatus.OK);
+            return new ResponseEntity(usuarioService.saveUsuario(usuarioInfo), HttpStatus.CREATED);
         } catch (Exception e) {
             Notificacion notificacion = new Notificacion();
             notificacion.setMensaje(e.getMessage());
-            return new ResponseEntity<Object>(notificacion, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity(notificacion, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }
