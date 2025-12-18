@@ -5,8 +5,8 @@
 ### General Info
 ***
 El proyecto expone un API con dos endpoints para el manejo de la entidad Usuario:
-  * Busqueda de un usuario por su ID en uuid http://localhost:8080/api/usuario/find/072b0222-ca07-498e-a457-ed834809a073
-  * Creacion de registro de un usuario con sus telefonos asociados http://localhost:8080/api/usuario/save/
+  * Busqueda de un usuario por su ID en uuid http://localhost:8088/api/usuario/find/072b0222-ca07-498e-a457-ed834809a073
+  * Creacion de registro de un usuario con sus telefonos asociados http://localhost:8088api/usuario/save/
 
 Por defecto el proyecto ejecuta con la base de datos HSQLDB en memoria.
 Opcionalmente, si se desea persistir la data en HSQLDB server se puede ejecutar el archivo script.sql que crea las tablas y registros demo.
