@@ -23,6 +23,11 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
+    /**
+     * Metodo para buscar un usuario por su ID en UUID
+     * @param id
+     * @return
+     */
     @GetMapping("/find/{id}")
     Usuario usuarioById(@PathVariable String id) {
         return usuarioService.findUsuarioByUseruuid(id);
@@ -32,6 +37,21 @@ public class UsuarioController {
     public ResponseEntity saveUsuario(@RequestBody UsuarioInfo usuarioInfo) {
         try {
             return new ResponseEntity(usuarioService.saveUsuario(usuarioInfo), HttpStatus.CREATED);
+        } catch (Exception e) {
+            Notificacion notificacion = new Notificacion();
+            notificacion.setMensaje(e.getMessage());
+            return new ResponseEntity(notificacion, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
+     * Metodo para listar todos los usuarios registrados en hsqldb
+     * */
+    @GetMapping("/all")
+    public ResponseEntity listAllUsuarios() {
+        try {
+            //return new ResponseEntity(usuarioService.findAllUsuarios(), HttpStatus.OK);
+            return null;
         } catch (Exception e) {
             Notificacion notificacion = new Notificacion();
             notificacion.setMensaje(e.getMessage());
