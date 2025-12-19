@@ -1,5 +1,8 @@
-server:
+app:
   port: 8088
+
+server:
+  port: ${app.port}
 
 spring:
   datasource:
@@ -12,4 +15,4 @@ spring:
 
 evaluacion:
   openapi:
-    url: http://localhost:8088
+    url: http://localhost:${app.port}

@@ -38,4 +38,19 @@ public class UsuarioController {
             return new ResponseEntity(notificacion, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    /**
+     * Metodo para listar todos los usuarios
+     * */
+    @GetMapping("/all")
+    public ResponseEntity listAllUsuarios() {
+        try {
+            //return new ResponseEntity(usuarioService.findAllUsuarios(), HttpStatus.OK);
+            return null;
+        } catch (Exception e) {
+            Notificacion notificacion = new Notificacion();
+            notificacion.setMensaje(e.getMessage());
+            return new ResponseEntity(notificacion, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 }
