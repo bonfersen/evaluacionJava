@@ -40,7 +40,7 @@ public class UsuarioController {
     }
 
     /**
-     * Metodo para listar todos los usuarios
+     * Metodo para listar todos los usuarios registrados en hsqldb
      * */
     @GetMapping("/all")
     public ResponseEntity listAllUsuarios() {
