@@ -23,6 +23,11 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
+    /**
+     * Metodo para buscar un usuario por su ID en UUID
+     * @param id
+     * @return
+     */
     @GetMapping("/find/{id}")
     Usuario usuarioById(@PathVariable String id) {
         return usuarioService.findUsuarioByUseruuid(id);
